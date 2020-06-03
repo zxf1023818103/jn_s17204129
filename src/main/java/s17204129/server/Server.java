@@ -135,6 +135,7 @@ public class Server extends Application {
                     httpServer.start();
                     httpsServer.start();
                     stopButton.setDisable(false);
+                    errorLabel.setText("");
                 } catch (Exception e) {
                     errorLabel.setText(e.toString());
                     startButton.setDisable(false);
