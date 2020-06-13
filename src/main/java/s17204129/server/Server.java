@@ -9,6 +9,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -32,6 +33,7 @@ public class Server extends Application {
         stopButton.setDisable(true);
 
         final Label errorLabel = new Label();
+        errorLabel.setTextFill(Color.RED);
 
         GridPane gridPane = new GridPane();
         gridPane.setPadding(new Insets(10));
@@ -72,7 +74,7 @@ public class Server extends Application {
         Label keystoreTypeLabel = new Label("证书格式：");
         gridPane.add(keystoreTypeLabel, 0, 4);
         final ComboBox<String> keystoreTypeComboBox = new ComboBox<>();
-        keystoreTypeComboBox.getItems().addAll("JKS", "PKCS12");
+        keystoreTypeComboBox.getItems().addAll("JCEKS", "JKS", "PKCS12");
         keystoreTypeComboBox.setValue("JKS");
         gridPane.add(keystoreTypeComboBox, 1, 4);
         final Label keystoreFile = new Label("证书私钥文件：");
