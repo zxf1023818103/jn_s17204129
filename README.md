@@ -1,6 +1,14 @@
-# 简单的 Java HTTP 文件共享服务器
+# 简单的 Java HTTP 文件共享服务器（带客户端）
 
-![img](doc/screenshot.png)
+### 运行截图
+
+#### 服务端截图
+
+![img](doc/server.png)
+
+#### 客户端截图
+
+![img](doc/client.png)
 
 ### Features
 
